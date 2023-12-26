@@ -1,8 +1,3 @@
-
-// @author Michael J Monda
-// @author Jace Howhannesian
-
-// class imports.
 #include <Arduino.h>
 #include <Romi32U4.h>
 #include <Chassis.h>
@@ -27,7 +22,7 @@ static int irRemotePin = 14;
 enum chassisState {FOLLOWINGLINE, FOLLOWTOHOUSE, FOLLOWFROMHOUSE, FOLLOWTODEPOT, 
                    CROSSDETECTION, RETURNCROSSDETECTION, HALT, ZERO, 
                    FORTYFIVE, TWENTYFIVE, ONEEIGHTZERO, GRAB, DROP,
-                   // the below states are established to make the robot pick up the panel from the depot
+                  // the below states are established to make the robot pick up the panel from the depot
                    LOADPANEL, DROPOFF, END} currState, nextState; // driving
 // enum armstrongState {ZERO, FORTYFIVE, TWENTYFIVE} currPosition, nextPosition; // arm actuation
 // enum forkilftState {EXTENDED, RETRACTED} currGripState, nextGripState; // gripper control
